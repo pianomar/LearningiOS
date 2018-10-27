@@ -12,6 +12,9 @@
 		0781ADFB2184D6B6004DE5DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0781ADF92184D6B6004DE5DE /* Main.storyboard */; };
 		0781ADFD2184D6B7004DE5DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0781ADFC2184D6B7004DE5DE /* Assets.xcassets */; };
 		0781AE002184D6B7004DE5DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0781ADFE2184D6B7004DE5DE /* LaunchScreen.storyboard */; };
+		0781AE112184ED2D004DE5DE /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0781AE102184ED2D004DE5DE /* MyCollectionViewCell.swift */; };
+		0781AE142184EE6A004DE5DE /* ListItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0781AE132184EE6A004DE5DE /* ListItemVM.swift */; };
+		4D225205A70ADB83265A8927 /* Pods_OmarLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6238F62C3482A0458FF0C4F4 /* Pods_OmarLearning.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		0781ADFC2184D6B7004DE5DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0781ADFF2184D6B7004DE5DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0781AE012184D6B7004DE5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0781AE102184ED2D004DE5DE /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		0781AE132184EE6A004DE5DE /* ListItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemVM.swift; sourceTree = "<group>"; };
+		3BF813D38081AB807C3195E1 /* Pods-OmarLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmarLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OmarLearning/Pods-OmarLearning.debug.xcconfig"; sourceTree = "<group>"; };
+		6238F62C3482A0458FF0C4F4 /* Pods_OmarLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmarLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B708C32F2C926B3CC0D28B /* Pods-OmarLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmarLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-OmarLearning/Pods-OmarLearning.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D225205A70ADB83265A8927 /* Pods_OmarLearning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				0781ADF42184D6B6004DE5DE /* OmarLearning */,
 				0781ADF32184D6B6004DE5DE /* Products */,
+				DD43703CE48CBC93E57165E9 /* Pods */,
+				56D0DDE32F430276DE26B675 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +65,11 @@
 		0781ADF42184D6B6004DE5DE /* OmarLearning */ = {
 			isa = PBXGroup;
 			children = (
+				0781AE0B2184D836004DE5DE /* Entity */,
+				0781AE0A2184D831004DE5DE /* Wireframe */,
+				0781AE092184D829004DE5DE /* Interactor */,
+				0781AE082184D780004DE5DE /* Presenter */,
+				0781AE072184D75E004DE5DE /* View */,
 				0781ADF52184D6B6004DE5DE /* AppDelegate.swift */,
 				0781ADF72184D6B6004DE5DE /* ViewController.swift */,
 				0781ADF92184D6B6004DE5DE /* Main.storyboard */,
@@ -64,6 +80,68 @@
 			path = OmarLearning;
 			sourceTree = "<group>";
 		};
+		0781AE072184D75E004DE5DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0781AE122184EE31004DE5DE /* ViewModels */,
+				0781AE102184ED2D004DE5DE /* MyCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0781AE082184D780004DE5DE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0781AE092184D829004DE5DE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0781AE0A2184D831004DE5DE /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		0781AE0B2184D836004DE5DE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0781AE122184EE31004DE5DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0781AE132184EE6A004DE5DE /* ListItemVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		56D0DDE32F430276DE26B675 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6238F62C3482A0458FF0C4F4 /* Pods_OmarLearning.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD43703CE48CBC93E57165E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BF813D38081AB807C3195E1 /* Pods-OmarLearning.debug.xcconfig */,
+				C7B708C32F2C926B3CC0D28B /* Pods-OmarLearning.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0781AE042184D6B7004DE5DE /* Build configuration list for PBXNativeTarget "OmarLearning" */;
 			buildPhases = (
+				CF25D98B69A24AF61AE0D6FB /* [CP] Check Pods Manifest.lock */,
 				0781ADEE2184D6B6004DE5DE /* Sources */,
 				0781ADEF2184D6B6004DE5DE /* Frameworks */,
 				0781ADF02184D6B6004DE5DE /* Resources */,
+				8F1DB2A8DA4C9144DC1DBC3D /* [CP] Embed Pods Frameworks */,
+				AEC6C6DA893358E6677A3E10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +211,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8F1DB2A8DA4C9144DC1DBC3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OmarLearning/Pods-OmarLearning-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OmarLearning/Pods-OmarLearning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEC6C6DA893358E6677A3E10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OmarLearning/Pods-OmarLearning-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF25D98B69A24AF61AE0D6FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmarLearning-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0781ADEE2184D6B6004DE5DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0781ADF82184D6B6004DE5DE /* ViewController.swift in Sources */,
+				0781AE142184EE6A004DE5DE /* ListItemVM.swift in Sources */,
 				0781ADF62184D6B6004DE5DE /* AppDelegate.swift in Sources */,
+				0781AE112184ED2D004DE5DE /* MyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,9 +427,11 @@
 		};
 		0781AE052184D6B7004DE5DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF813D38081AB807C3195E1 /* Pods-OmarLearning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OmarLearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +439,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = wifiesta.OmarLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -295,9 +447,11 @@
 		};
 		0781AE062184D6B7004DE5DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B708C32F2C926B3CC0D28B /* Pods-OmarLearning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OmarLearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = wifiesta.OmarLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
